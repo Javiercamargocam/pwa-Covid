@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <meta nombre="tema-color" contenido="#F0DB4F">
+    <meta nombre="MobileOptimized" content="width">
+    <meta nombre="HandheldFriendly" content="true">
+    <meta nombre="apple-mobile-web-app-capable" content="sí">
+    <meta nombre="apple-mobile-web-app-status-bar-style" content="negro-translúcido">
+    <link rel="shortcut icon" type="image/png" href="img/logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+    <link rel="apple-touch-startup-image" href="logo.png">
+    <link rel="manifest" href="manifest.json">
+    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+    <link href="css/esti.css" rel="stylesheet" />
+  
+  
+    <title>Encuesta COVID-19</title>
+    
+  </head>
+  
+    <body style="background-image: url(https://thumbs.dreamstime.com/b/azul-incons%C3%BAtil-del-modelo-del-fondo-de-la-salud-de-la-medicina-de-la-tableta-de-la-jeringuilla-abstracta-del-remiendo-54344666.jpg);">
+      <div class="container-fluid">
+        
+        <div class="row">
+          <img src="img/baner.jpg" width="100%" height="100%">
+    
+        </div>		
+        <div class="row">
+          <div class="col">
+            <br><br>
+            <center><h1>TENGO SÍNTOMAS Y ME PREOCUPA QUE PUEDA SER COVID-19</h1></center>
+            <br>
+            <center><h3>Llena el siguiente formulario y personal de salud capacitado se pondrá en contacto contigo.</h3></center>
+            <center><h5>Tú información no se compartirá con nadie.</h5></center>
+            <br>
+            <div class="text-center">
+
+                        
+            <!-- multistep form -->
+            <form id="msform" class="steps">
+  
+              <!-- fieldsets -->
+              
+              <fieldset>
+                <h2 class="fs-title">SINTOMAS</h2>
+                <h3 class="fs-subtitle">Responde las siguientes preguntas:</h3>
+                <h4>¿Ha tenido alguno de los siguientes síntomas?</h4>
+                <div class="row row-cols-1">
+                  <div class="col-xs-12 col-sm-6 col-md-8">
+                    <div class="float-right">
+                      ¿fiebre mayor a 38 grados?
+                      <input type="hidden" name="fiebre" value="0" />
+                      <input type="checkbox" class="sintomas" name="fiebre" value="1"  data-toggle="toggle" data-on="Sí" data-off="No" data-size="sm">           
+                    </div>          
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-8">
+                    <div class="float-right">
+                      ¿dolor de ojos?
+                      <input type="hidden" name="dolor_ojos" value="0" />
+                      <input type="checkbox" class="sintomas" name="dolor_ojos" value="1" data-toggle="toggle" data-on="Sí" data-off="No" data-size="sm">
+                    </div>          
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-8">
+                    <div class="float-right">
+                      ¿dolor de torax?
+                      <input type="hidden" name="dolor_abdomen" value="0" />
+                      <input type="checkbox" class="sintomas" name="dolor_abdomen" value="1" data-toggle="toggle" data-on="Sí" data-off="No" data-size="sm">      
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-8">
+                    <div class="float-right">
+                      ¿dolor de músculos?
+                      <input type="hidden" name="dolor_musculos" value="0" />
+                      <input type="checkbox" class="sintomas" name="dolor_musculos" value="1" data-toggle="toggle" data-on="Sí" data-off="No" data-size="sm">      
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-8">
+                    <div class="float-right">
+                      ¿dolor de cabeza?
+                      <input type="hidden" name="dolor_cabeza" value="0" />
+                      <input type="checkbox" class="sintomas" name="dolor_cabeza" value="1" data-toggle="toggle" data-on="Sí" data-off="No" data-size="sm">    
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-8">
+                    <div class="float-right">
+                      ¿dolor de garganta?
+                      <input type="hidden" name="dolor_garganta" value="0" />
+                      <input type="checkbox" class="sintomas" name="dolor_garganta" value="1" data-toggle="toggle" data-on="Sí" data-off="No" data-size="sm">     
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-8">
+                    <div class="float-right">
+                      ¿dolor de rodillas?
+                      <input type="hidden" name="dolor_rodillas" value="0" />
+                      <input type="checkbox" class="sintomas" name="dolor_rodillas" value="1" data-toggle="toggle" data-on="Sí" data-off="No" data-size="sm">        
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-8">
+                    <div class="float-right">
+                      ¿dolor de oído?
+                      <input type="hidden" name="dolor_oido" value="0" />
+                      <input type="checkbox" class="sintomas" name="dolor_oido" value="1" data-toggle="toggle" data-on="Sí" data-off="No" data-size="sm">         
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-8">
+                    <div class="float-right">
+                      ¿dolor de articulaciones?
+                      <input type="hidden" name="dolor_articulaciones" value="0" />
+                      <input type="checkbox" class="sintomas" name="dolor_articulaciones" value="1" data-toggle="toggle" data-on="Sí" data-off="No" data-size="sm">         
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-8">
+                    <div class="float-right">
+                      ¿tos?
+                      <input type="hidden" name="tos" value="0" />
+                      <input type="checkbox" class="sintomas" name="tos" value="1" data-toggle="toggle" data-on="Sí" data-off="No" data-size="sm">         
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-8">
+                    <div class="float-right">
+                      ¿dificultad para respirar?
+                      <input type="hidden" name="dificultad_respirar" value="0" />
+                      <input type="checkbox" class="sintomas" name="dificultad_respirar" value="1" data-toggle="toggle" data-on="Sí" data-off="No" data-size="sm">         
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-8">
+                    <div class="float-right">
+                      ¿sudoración?
+                      <input type="hidden" name="sudoracion" value="0" />
+                      <input type="checkbox" class="sintomas" name="sudoracion" value="1" data-toggle="toggle" data-on="Sí" data-off="No" data-size="sm">         
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-8">
+                    <div class="float-right">
+                      ¿escurrimiento nasal?
+                      <input type="hidden" name="escurrimiento_nasal" value="0" />
+                      <input type="checkbox" class="sintomas" name="escurrimiento_nasal" value="1" data-toggle="toggle" data-on="Sí" data-off="No" data-size="sm">         
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-8">
+                    <div class="float-right">
+                      ¿comezón?
+                      <input type="hidden" name="comezon" value="0" />
+                      <input type="checkbox" class="sintomas" name="comezon" value="1" data-toggle="toggle" data-on="Sí" data-off="No" data-size="sm">         
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-8">
+                    <div class="float-right">
+                      ¿conjuntivitis?
+                      <input type="hidden" name="ojos_rojos" value="0" />
+                      <input type="checkbox" class="sintomas" name="ojos_rojos" value="1" data-toggle="toggle" data-on="Sí" data-off="No" data-size="sm">         
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-8">
+                    <div class="float-right">
+                      ¿vómito?
+                      <input type="hidden" name="vomito" value="0" />
+                      <input type="checkbox" class="sintomas" name="vomito" value="1" data-toggle="toggle" data-on="Sí" data-off="No" data-size="sm">         
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-8">
+                    <div class="float-right">
+                      ¿diarrea?
+                      <input type="hidden" name="diarrea" value="0" />
+                      <input type="checkbox" class="sintomas" name="diarrea" value="1" data-toggle="toggle" data-on="Sí" data-off="No" data-size="sm">         
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col">
+                  <label for="date" class="date">Ingrese la fecha en la que iniciaron los síntomas</label>
+                  <input type="date" class="date" name="date" max="" style="width: 80%;">
+                </div>
+  
+                
+                <input type="button" name="next" class="next action-button float-right" value="evaluar" />
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+      <br>
+  
+      <!-- Modal Aviso de privasidad -->
+      <div class="modal fade" id="contenido-modal1" tabindex="1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="contenido-modal1"></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h5 class="text-center">AVISO DE PRIVACIDAD</h5>
+              <h5 class="text-center">CUESTIONARIO COVID-19 </h5>
+              <p class="text-justify">En cumplimiento a la Ley de Protección de Datos Personales en Posesión de Sujetos
+                Obligados para el Estado de Quintana Roo, los Servicios Estatales de Salud del Estado
+                de Quintana Roo (SESA), es la responsable del tratamiento de los datos que se
+                obtengan a través de la información que se proporcione mediante la Encuesta
+              COVID-19, y serán utilizados para las siguientes finalidades:</p>
+  
+              <ul>
+                <li>Evaluación personal por síntomas de COVID-19.</li>
+                <li>Monitoreo de síntomas por COVID-19 y estado de salud de la población.</li>
+                <li>Vigilancia epidemiológica activa en la población.</li>
+              </ul>
+  
+              <p class="text-justify">
+                <small>Si desea conocer mayor información, usted podrá consultar el Aviso de Privacidad
+                  Integral en la siguiente dirección electrónica: http://www.qroo.gob.mx/sesa o bien,
+                  puede consultarlo de forma presencial directamente en la Unidad de Transparencia
+                  de los Servicios Estatales de Salud, ubicado en avenida Chapultepec número 267,
+                  colonia Centro, código postal 77000, de la Ciudad de Chetumal , Quintana Roo,
+                  México.
+                </small>
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div> 
+  
+      <!-- Scripts -->
+      <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+      <script src="script.js"></script>
+    </body>
+    </html>
+  
